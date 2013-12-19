@@ -38,9 +38,6 @@ class Physical:
 				GPIO.output(10,0)
 
 
-
-
-
 def toogleRadio():
 	qx(["mpc", "toggle"])
 
