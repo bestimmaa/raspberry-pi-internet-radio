@@ -2,4 +2,4 @@
 # -*- coding: utf-8 -*-
  
 def getStatus(self):
-	return "Status"
+	return "A bit of text"

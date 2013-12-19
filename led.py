@@ -20,8 +20,10 @@ class Physical:
 	def setupGPIO(self):
 		self.cleanGPIO()
 		GPIO.setmode(GPIO.BOARD)
-		GPIO.setup(10, GPIO.OUT, 0)
 		GPIO.setup(8, GPIO.IN)
+		GPIO.setup(10, GPIO.OUT, 0)
+		GPIO.setup(12,GPIO.IN)
+		GPIO.setup(16,GPIO.OUT, 0)
 	def cleanGPIO(self):
 		GPIO.cleanup()
 
@@ -34,8 +36,12 @@ class Physical:
 			#print status
 			if "[playing]" in status:
 				GPIO.output(10,1)
+				GPIO.output(16,1)
+
 			else:
 				GPIO.output(10,0)
+				GPIO.output(16,0)
+
 
 
 def toogleRadio():
@@ -58,6 +64,12 @@ try:
 				buttonLastPress = now
 				print "Play/Pause button pressed"
 				toogleRadio()
+		if not GPIO.input(12):
+			now = datetime.datetime.now()
+			delta = now - buttonLastPress
+			if delta.total_seconds() > 0.4:
+				buttonLastPress = now
+				print "Next button pressed"
 	phy.cleanGPIO();
 	qx(["mpc", "stop"])
 except Exception, e:
