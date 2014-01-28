@@ -102,6 +102,6 @@ except Exception, e:
 except:
 	GPIO.cleanup()
 	qx(["mpc", "stop"])
-	print "\nSooo unexpected. No playback. Channels. Much Clean. Very Terminating. WOW."
+	print "\nSooo unexpected. Without much error. No playback. Channels. Much Clean. Very Terminating. WOW."
 
 
