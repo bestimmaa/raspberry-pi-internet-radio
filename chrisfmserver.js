@@ -4,6 +4,9 @@ Respond to HTTP GET requests http://URL.com/?radio=play&volume=100
 
 */
 var regex =  /\/\?(([a-z]+)=([a-z]+|\d+))/
+var ip = "192.168.178.26"
+var port = "8080"
+
 var http = require('http');
 http.createServer(function (req, res) {
 	console.log("Received request with url:"+req.url);
@@ -72,5 +75,5 @@ http.createServer(function (req, res) {
   			res.end('Hello World!');
 	}
 
-}).listen(8080, '192.168.178.26');
-console.log('Server running at http://192.168.178.26:8080/ and http://notanotherhoneypot.selfhost.eu');
+}).listen(port, ip);
+console.log('Server running at http://'+ip+':'+port+' and '+process.env.SERVER_URL);
