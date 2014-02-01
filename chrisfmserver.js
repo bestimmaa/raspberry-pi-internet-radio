@@ -15,7 +15,7 @@ http.createServer(function (req, res) {
 	if (result != null){
 		if (result.length == 4) {
 			if (result[2] == "radio" & result[3] == "stop") {
-				console.log("We should stop the radio...");
+				console.log("Starting radio...");
 				var sys = require('sys')
 				var exec = require('child_process').exec;
 				function puts(error, stdout, stderr) {
@@ -26,7 +26,7 @@ http.createServer(function (req, res) {
 				exec("mpc stop", puts);
 			};
 			if (result[2] == "radio" & result[3] == "start") {
-				console.log("We should start the radio...");
+				console.log("Stopping radio...");
 				var sys = require('sys')
 				var exec = require('child_process').exec;
 				function puts(error, stdout, stderr) {
@@ -38,7 +38,7 @@ http.createServer(function (req, res) {
 			};
 
 			if (result[2] == "volume") {
-				console.log("We should start the radio...");
+				console.log("Changing volume...");
 				var sys = require('sys')
 				var exec = require('child_process').exec;
 				function puts(error, stdout, stderr) {
@@ -50,7 +50,7 @@ http.createServer(function (req, res) {
 			};
 
 			if (result[2] == "station") {
-				console.log("Change station...");
+				console.log("Changing station...");
 				var sys = require('sys')
 				var exec = require('child_process').exec;
 				function puts(error, stdout, stderr) {
