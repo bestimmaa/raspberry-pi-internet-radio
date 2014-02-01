@@ -12,10 +12,10 @@ Raspberry Pi Internet Radio
 ## Software
 
 * [Raspbian](http://www.raspbian.org)
-* [MPD](http://www.musicpd.org): Music Player Daemon
-* [MPC](http://www.musicpd.org/clients/mpc/): A client to control mpc
-* [lcd4linux](http://ssl.bulix.org/projects/lcd4linux/)
-* [node.js](http://nodejs.org) 
+* [MPD](http://www.musicpd.org) - Music Player Daemon
+* [MPC](http://www.musicpd.org/clients/mpc/) - A client to control mpc
+* [lcd4linux](http://ssl.bulix.org/projects/lcd4linux/) - Display information on DPF
+* [node.js](http://nodejs.org) - Runs the API server
 
 ## Installation
 
