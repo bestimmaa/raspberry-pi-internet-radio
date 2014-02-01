@@ -11,11 +11,11 @@ Raspberry Pi Internet Radio
 
 ## Software
 
-* Raspian
-* MPD
-* MPC
-* LCD4Linux
-* Node.js
+* [Raspbian](http://www.raspbian.org)
+* [MPD](http://www.musicpd.org): Music Player Daemon
+* [MPC](http://www.musicpd.org/clients/mpc/): A client to control mpc
+* [lcd4linux](http://ssl.bulix.org/projects/lcd4linux/)
+* [node.js](http://nodejs.org) 
 
 ## Installation
 
