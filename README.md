@@ -7,7 +7,7 @@ Raspberry Pi Internet Radio
 * USB wifi dongle
 * 3x illuminated physical push button
 * A cheap digital picture frame (DPF)
-* USB powered hub (2,5A current)
+* USB powered hub (2.5A current)
 
 ## Software
 
@@ -16,3 +16,13 @@ Raspberry Pi Internet Radio
 * MPC
 * LCD4Linux
 * Node.js
+
+## Installation
+
+### Flashing the DPF
+
+To enable the DPF to work with lcd4linux a custom firmware is needed.
+
+### Compiling lcd4linux with DPF and Python plugin
+
+Lcd4linux is a tool to control lcd displays connected to the computer. Plugins provide additonal functionality, using a DPF and accessing Python modules in this case.
