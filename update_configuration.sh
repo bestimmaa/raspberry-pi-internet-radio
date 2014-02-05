@@ -2,9 +2,6 @@
 
 echo "updating configuration..."
 
-#kill lcd4linux process
-#killall lcd4linux
-
 mydir="$(pwd)"
 
 /etc/init.d/lcd4linuxservice.sh stop
@@ -14,6 +11,9 @@ mydir="$(pwd)"
 #mkdir -p /usr/local/var/run
 
 # copy daemons
+
+#cp $mydir/delayed_lcd4linux_startup.sh /usr/local/bin
+#chmod +x /usr/local/bin/delayed_lcd4linux_startup.sh
 
 cp $mydir/chrisfm.py /usr/local/bin/chrisfm/chrisfm.py
 chmod 755 /usr/local/bin/chrisfm/chrisfm.py
