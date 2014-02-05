@@ -6,7 +6,7 @@ Raspberry Pi Internet Radio
 * Raspberry Pi
 * USB wifi dongle
 * 3x illuminated physical push buttons
-* A cheap digital picture frame (DPF)
+* A cheap digital picture frame (AX206 DPF)
 * USB powered hub (2.5A current)
 
 ## Software
