@@ -13,7 +13,8 @@ Raspberry Pi Internet Radio
 
 * [Raspbian](http://www.raspbian.org)
 * [MPD](http://www.musicpd.org) - Music Player Daemon
-* [MPC](http://www.musicpd.org/clients/mpc/) - A client to control mpc
+* [MPC](http://www.musicpd.org/clients/mpc/) - A client to control MPD
+* [dpf-ax](http://sourceforge.net/projects/dpf-ax/) - Custom firmware for AX206 digital picture frames
 * [lcd4linux](http://ssl.bulix.org/projects/lcd4linux/) - Display information on DPF
 * [node.js](http://nodejs.org) - Runs the API server
 
@@ -21,11 +22,11 @@ Raspberry Pi Internet Radio
 
 ### Flashing the DPF
 
-To enable the DPF to work with lcd4linux a custom firmware is needed.
+To enable the DPF to work with lcd4linux a custom firmware is needed. You can find the firmware and flashing tools at the [dpf-ax](http://sourceforge.net/projects/dpf-ax/files/?source=navbar) project page.
 
 ### Compiling lcd4linux with DPF and Python plugin
 
-Lcd4linux is a tool to control lcd displays connected to the computer. Plugins provide additonal functionality, using a DPF and accessing Python modules in this case.
+Lcd4linux is a tool to control LCD displays connected to the computer. A plugin system allows the additon of feautures. We use the *DPF* plugin to access a DPF and the *Python* plugin to call python modules from lcd4linux.
 
 ## Cheat Sheet
 
