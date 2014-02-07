@@ -7,7 +7,7 @@ from subprocess import check_output as qx
 
 img_folder = "/home/pi/pics"
 
-def give_random_pic(self):
+def give_random_pic():
 	return img_folder+"/flower.png"
 
 def get_line_1():
@@ -39,6 +39,7 @@ def main(textarg):
 		'1' : get_line_1,
 		'2' : get_line_2,
 		'3' : get_line_3,
+		'pic': give_random_pic,
 	}
 	return options[textarg]()
 		
