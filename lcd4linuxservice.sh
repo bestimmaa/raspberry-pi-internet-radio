@@ -26,12 +26,12 @@ PIDFILE=/var/run/$DAEMON_NAME.pid
  
 do_start () {
     log_daemon_msg "Starting system $DAEMON_NAME daemon"
-    start-stop-daemon --start --background --pidfile $PIDFILE --user $DAEMON_USER --startas $DAEMON
+    start-stop-daemon --start --user $DAEMON_USER --pidfile $PIDFILE --exec $DAEMON
     log_end_msg $?
 }
 do_stop () {
     log_daemon_msg "Stopping system $DAEMON_NAME daemon"
-    start-stop-daemon --stop --pidfile $PIDFILE --retry 10
+    start-stop-daemon --stop  --retry 10 --pidfile $PIDFILE --exec $DAEMON
     log_end_msg $?
 }
  
