@@ -26,7 +26,7 @@ To enable the DPF to work with lcd4linux a custom firmware is needed. You can fi
 
 ### Compiling lcd4linux with DPF and Python plugin
 
-Lcd4linux is a tool to control LCD displays connected to the computer. A plugin system allows the additon of feautures. We use the *DPF* plugin to access a DPF and the *Python* plugin to call python modules from lcd4linux.
+Lcd4linux is a tool to control LCD displays connected to the computer. A plugin system allows the additon of feautures. We use the *DPF* plugin to access digital picture frames and the *Python* plugin to call python modules from lcd4linux.
 
 ## Cheat Sheet
 
